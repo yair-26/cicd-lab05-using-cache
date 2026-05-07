@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(git remote *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Labs\\\\lab07-using-cache\" -Force)",
+      "Bash(Select-Object -Property Mode, Name)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(ls \"c:\\\\Labs\")",
+      "Read(//c/Labs/**)",
+      "Bash(gh auth *)"
+    ]
+  }
+}
