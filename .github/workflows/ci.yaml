@@ -10,10 +10,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4    
 
-        -name: checkout code
+      - name: checkout code
         uses: actions/checkout@v4
 
-        -name: chache node modules
+      - name: chache node modules
         id: node-modules-cache
         uses: actions/cache@v4  
         with:
@@ -21,6 +21,6 @@ jobs:
          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
          restore-keys: |
           ${{ runner.os }}-node-modules-
-        -name: install dependencies
+      - name: install dependencies
         if: steps.node-modules-cache.outputs.cache-hit != 'true'
         run: npm ci
